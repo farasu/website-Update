@@ -8,7 +8,9 @@
 <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
             <div class="row" style="text-align: justify; text-justify: inter-character;">
+                @if($message)
                 <p style="padding: 10px 40px; text-align: @if (app()->getLocale() === 'en') left; @else right @endif" >{!! nl2br($message->detail)  !!}</p> 
+                @endif            
             </div>
 
         </div>
